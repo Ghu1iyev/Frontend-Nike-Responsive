@@ -1,0 +1,176 @@
+#header-top{
+    height: 40px;
+    width: 100%;
+    background-color: #f5f5f5;
+    .container{
+        height: 100%;
+        .row{
+            height: 100%;
+            .jordan{
+                ul{
+                    margin: 0 !important;
+                    
+                }
+            }
+            .registration{
+                ul{
+                    margin: 0 !important;
+                    li{
+                        margin: 0 15px;
+                        a{
+                            text-decoration: none;
+                            color: black;
+                        }
+                        span{
+                            position: relative;
+                            left: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+#header-bottom{
+    height: 60px;
+    .container{
+        .row{
+            .nav{
+                ul{
+                    li{
+                        margin: 0 15px;
+                        a{
+                            text-decoration: none;
+                            color: black;
+                        }
+                        a:hover{
+                            padding-bottom: 10px;
+                            border-bottom: 2px solid black;
+                        }
+                    }
+                }
+            }
+            .search{
+                .icons{
+                   
+                    .fa-bars{
+                        display: none;
+                    }
+                }
+                .fa-magnifying-glass{
+                    position: relative;
+                    left: 40px;
+                    font-size: 25px;
+                }
+                span{
+                    position: absolute;
+                    right: 19%;
+                    color: grey;
+                }
+                input{
+                    border-radius: 20px;
+                    border: none;
+                    background-color: #f5f5f5;
+                    padding: 6px;
+                    margin: 0 8px;
+                }
+                input:hover{
+                    background-color: #E5E5E5;
+                }
+            }
+        }
+    }
+}
+#top{
+    display: flex;
+    justify-content: center;
+    background-color: #f5f5f5;
+    .about{
+        text-align: center;
+        p{
+            margin: 0;
+        }
+        a{
+            font-size: 15px;
+            color: black;
+        }
+    }
+}
+#bottom{
+    width: 100%;
+    .image{
+        img{
+           max-width: 100%;
+        
+        }
+    }
+}
+#shop{
+    text-align: center;
+    .title{
+        h2{
+            font-size: 55px;
+            padding-top: 50px;
+        }
+        
+    }
+    .btn{
+        a{
+            text-decoration: none;
+            color: #fff;
+            background-color: black;
+            padding: 5px 15px;
+            border-radius: 20px;
+        }
+    }
+}
+@media screen and (min-width:300px) and (max-width: 1007px){
+    #header-top{
+        display: none;
+    }
+  #header-bottom{
+      .container{
+          .row{
+            .nav{
+                ul{
+                    display: none !important;
+                }
+            }
+            .search{
+                .fa-magnifying-glass{
+                    display: none;
+                }
+                input{
+                    display: none;
+                }
+                span{
+                    display: none;
+                }
+                .icons{
+
+                    .fa-bars{
+                        display: block;
+                        position: absolute;
+                        top: 18px;
+                        right: 18px;
+                        font-size: 27px;
+                    }
+                    .fa-basket-shopping{
+                       
+                        position: absolute;
+                        right: 65px;
+                        top: 16px;
+                        font-size: 27px;
+                    }
+                    .fa-heart{
+                        position: absolute;
+                        font-size: 27px;
+                        right: 22%;
+                        top: 18px;
+                    }
+                }
+            }
+          }
+      }
+  }
+}
